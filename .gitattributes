@@ -1,0 +1,7 @@
+# Always keep store version - never overwrite from base
+*.json merge=ours
+config/settings_data.json merge=ours
+templates/*.json merge=ours
+assets/custom.css merge=ours
+assets/custom.js merge=ours
+snippets/custom.liquid merge=ours
