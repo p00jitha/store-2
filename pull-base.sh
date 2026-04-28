@@ -3,9 +3,6 @@
 echo "Fetching latest from base..."
 git fetch base
 
-echo "Merging all base changes..."
-git merge base/main --no-edit
-
 echo "Pulling all base files..."
 git checkout base/main -- sections/
 git checkout base/main -- snippets/
@@ -41,7 +38,3 @@ git checkout HEAD -- templates/password.json
 git checkout HEAD -- templates/customers/account.json
 git checkout HEAD -- templates/customers/login.json
 
-
-echo ""
-echo "✅ Done. Review with: git status"
-echo "Commit with: git add . && git commit -m 'chore: pull latest from base'"
